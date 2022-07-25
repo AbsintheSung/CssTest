@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+        <title>網頁切版_方塊酥版面</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            body{
+                background-color: black;
+                /* color: #fff; */
+            }
+            .wrap{
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .item{
+                float:left;
+                position: relative;
+            }
+            .item img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            .item:first-child{
+                width:50%;
+            }
+            .item:first-child ~ .item{
+                width:25%;
+            }
+            .item .txt{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                text-align: center;
+                box-sizing: border-box;
+                background-color: rgba(0,0,0,.6);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                opacity: 0;
+                transform: scale(0);
+                transition: .5s;
+
+
+            }
+            .item:hover .txt{
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .item h3{
+                margin-bottom: .4rem;
+            }
+            .item p{
+                font-weight: 100;
+                line-height: 1.6;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="item">
+                <img src="https://picsum.photos/500/500?random=10">
+                <div class="txt">
+                    <h3>第12代Core處理器＋RTX 3070顯卡</h3>
+                    <p>近期全台疫情死灰復燃，抗疫自保的最佳方法就是宅在家打GAME啦！但是要是你的筆電不夠力、跑不動遊戲的話，那可就淪為對手練靶的對象了，這時候你需要一台效能強勁、暢玩遊戲的好夥伴，宏碁推出全新「Acer Nitro 5」升級2022年最新第 12 代Intel Core H45處理器與 GeForce RTX 3070 Ti 顯卡，帶來更優異的核心效能極限，同時內建雙風扇與獨家散熱技術，提供更流暢完美的遊戲體驗！</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/500?random=20">
+                <div class="txt">
+                    <h3>遠傳亞太電原訂9月底合併</h3>
+                    <p>遠傳、亞太電信併購案合併基準日暫定9月30日，遠傳總經理井琪今天表示，一切按主管機關審議時程。眾多「果粉」期待的蘋果（APPLE）WWDC開發者大會2022在美國時間6日起正式登場，蘋果公布了最新版作業系統iOS 16的改版內容，遠傳、亞太電信併購案合併基準日暫定9月30日，遠傳總經理井琪今天表示，一切按主管機關審議時程。眾多「果粉」期待的蘋果（APPLE）WWDC開發者大會2022在美國時間6日起正式登場，蘋果公布了最新版作業系統iOS 16的改版內容</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/500?random=30">
+                <div class="txt">
+                    <h3>蘋果WWDC22公開iOS 16改版大亮點 5款舊iPhone不再更新</h3>
+                    <p>眾多「果粉」期待的蘋果（APPLE）WWDC開發者大會2022在美國時間6日起正式登場，蘋果公布了最新版作業系統iOS 16的改版內容，眾多「果粉」期待的蘋果（APPLE）WWDC開發者大會2022在美國時間6日起正式登場，蘋果公布了最新版作業系統iOS 16的改版內容</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/500?random=40">
+                <div class="txt">
+                    <h3>iOS16更新！8大亮點一次看 5款舊機不支援</h3>
+                    <p>蘋果（Apple）在今（7）日凌晨舉行WWDC開發者大會，推出全新作業系統iOS16，帶來更個性化的「鎖定畫面」、升級的「專注模式」等新功能，因應遠端工作，家中寬頻網路需求大增，不少民眾也開始比較相關方案及優惠，今年3月至4月寬頻用戶上傳訊務量年成長27%。</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/500?random=50">
+                <div class="txt">
+                    <h3>中華電信「超值隱藏方案」曝光</h3>
+                    <p>因應遠端工作，家中寬頻網路需求大增，不少民眾也開始比較相關方案及優惠，今年3月至4月寬頻用戶上傳訊務量年成長27%。</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

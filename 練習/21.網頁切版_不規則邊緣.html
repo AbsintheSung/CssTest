@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版_不規則邊緣</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .banner{
+            height: 700px;
+            background: url(./img/69351045_p0.jpg) center center / cover;
+        }
+        .sec .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .sec .item{
+            width:570px;
+            margin: 0 15px;
+        }
+        .sec .item h2{
+            margin-bottom: 1.3rem;
+        }
+        .sec .item p{
+            line-height: 1.7;
+            margin-bottom: 1.6rem;
+        }
+        .sec{
+            position: relative;
+        }
+        .sec::after{
+            content:'';
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            top:0;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            box-shadow:178px 0px 0px 30px rgb(255, 255, 255),
+            327px 34px 0px 20px rgb(255, 255, 255),
+            480px 9px 0px 60px rgb(255, 255, 255),
+            690px 71px 0px 60px rgb(255, 255, 255),
+            880px 0px 0px 89px rgb(255, 255, 255),
+
+            -178px 0px 0px 30px #fff,
+            -327px 34px 0px 20px #fff,
+            -480px 9px 0px 60px #fff,
+            -690px 71px 0px 60px #fff,
+            -880px 0px 0px 89px #fff,
+            -1100px 50px 0 89px #fff,
+
+            100px 0px 0px 56px rgba(0,0,10,.5),
+            298px 10px 0px 56px rgba(0,0,10,.5),
+            540px -40px 0px 56px rgba(0,0,10,.5),
+            740px -30px 0px 30px rgba(0,0,10,.5),
+            880px -100px 0px 80px rgba(0,0,10,.5),
+            1000px 0px 0px 80px rgba(0,0,10,.5),
+            
+            -60px 0px 0px 56px rgba(0,0,10,.5),
+            -298px 10px 0px 56px rgba(0,0,10,.5),
+            -540px -40px 0px 56px rgba(0,0,10,.5),
+            -740px -30px 0px 30px rgba(0,0,10,.5),
+            -780px -70px 0px 80px rgba(0,0,10,.5),
+            -1200px 0px 0px 80px rgba(0,0,10,.5);
+        }
+        .sec::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            z-index: 1;
+            top:0;
+            left:0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="banner"></div>
+        <div class="sec">
+            <div class="container">
+                <div class="item">
+                    <h2>標題一</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur at cum voluptas quam tempore aperiam animi maxime aliquam architecto, ratione impedit quas minima, officia dolor. Eaque dicta provident molestiae odio placeat fugit minus facere dolore id, fugiat iusto assumenda.</p>
+                </div>
+                <div class="item">
+                    <h2>標題二</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur at cum voluptas quam tempore aperiam animi maxime aliquam architecto, ratione impedit quas minima, officia dolor. Eaque dicta provident molestiae odio placeat fugit minus facere dolore id, fugiat iusto assumenda.</p>
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>

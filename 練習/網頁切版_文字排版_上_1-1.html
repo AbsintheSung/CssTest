@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版 : 文字排版-上集_1-1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+        }
+        .container h1{
+            width: 400px;
+            text-align: right;
+            box-sizing: border-box;
+            padding: 0 15px;
+            background-color: #D5C7B9;
+        }
+        .container H1:after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 4em;
+            background-color: #000;
+            margin-left: auto;
+        }
+        .container .txt{
+            width: 1200px;
+            box-sizing: border-box;
+            padding: 0 15px;
+            column-count: 2;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <h1>CSS文字排版</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel neque maiores molestiae voluptatem, magni incidunt molestias reprehenderit error quia praesentium minima veritatis hic dolorum necessitatibus quas. Quasi excepturi tempore perspiciatis, dicta quam incidunt dolores maiores enim odio suscipit obcaecati necessitatibus explicabo ullam? Natus, accusantium neque. Exercitationem eaque hic unde recusandae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minus deserunt pariatur. Debitis delectus repellendus eos iusto nisi ullam explicabo voluptate a ducimus sunt porro placeat, non autem omnis quidem neque reiciendis voluptatum fugit obcaecati aliquam. Eos sequi laborum provident!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

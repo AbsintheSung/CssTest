@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版_文字排版-下集_1-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .container h1{
+            width: 400px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            order: 1;
+            font-size: 90px;
+            padding-left: 15px;
+            color:#aaa;
+            position: relative;
+        }
+        .container h1::before{
+            content:'';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #F1B444;
+            top:0;
+            left:0;
+            transform: rotate(10deg);
+            z-index: -1;
+        }
+        .container h1::after{
+            content:'';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #F1C555;
+            top:0;
+            left:0;
+            transform: rotate(20deg);
+            z-index: -1;
+        }
+        .container .txt{
+            width: 800px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            column-count:2;
+            column-gap:30px;
+            padding: 15px;
+            box-shadow: 0 0  30px #ccc;
+        }
+        .container .txt p{
+            margin-bottom: 1em;
+        }
+        .container .txt p:first-child::first-letter{
+            font-size: 40px;
+            float: left;
+            padding-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="wrap">
+    <div class="container">
+        <h1>網頁切版_文字排版-下集_1-1</h1>
+        <div class="txt">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo et facere nemo molestias blanditiis nesciunt suscipit ducimus eius distinctio commodi ea ex doloremque id, similique qui pariatur velit minima tenetur temporibus ullam adipisci in expedita modi? Vitae minima dolor nobis perferendis, error atque. Dignissimos pariatur ratione adipisci dolorum laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo vel maiores aut accusantium? Saepe recusandae nemo quasi, dicta ut eligendi laudantium ab cumque expedita dolorem commodi. Enim, harum dolor?
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

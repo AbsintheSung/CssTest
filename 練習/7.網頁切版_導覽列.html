@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inintial-scale=1.0">
+    <meta name="keyword" content="">
+    <meta name="description" contnet="">
+    <title>網頁切版_導覽列</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .main-header{
+            background:linear-gradient(0deg,#fe70d8,#3713c1)
+        }
+        .main-header .container{
+            display: flex;
+            align-items: center;
+            max-width: 1400px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-header .logo{
+            width: 100px;
+            
+        }
+        .main-header .logo img{
+            width: 100%;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        .main-header .main-nav{
+            margin: auto;
+            display: flex;
+            
+            
+        }
+        .main-header .main-nav a{ 
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 1em;
+            position: relative;
+            transform: translateY(0px);
+            transition: .3s;
+        }
+
+        .main-header .header-search{
+            display: flex;
+        }
+        .main-header .header-search button,
+        .main-header .header-search input{
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+        }
+        .main-header .header-search button{
+            border-radius: 0 200px 200px 0;
+            
+        }
+        .main-header .header-search input{
+            border-radius:  200px 0 0 200px ; 
+        }
+        .main-header .header-search button:focus,
+        .main-header .header-search input:focus{
+            outline:none
+        }
+
+        .main-header .header-search button img{
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+
+        /*底線效果*/
+        .main-header .main-nav a:after{
+            content:'';
+            position:absolute;
+            right:50%;
+            left: 50%;
+            height: 0;
+            bottom: -5px;
+            border-bottom: 1px solid #fff;
+            transition: .3s;
+        }
+        .main-header .main-nav a:hover:after{
+            left: 0;
+            right: 0;
+        }
+
+        /*往上飄效果*/
+        .main-header .main-nav a:hover{
+            transform: translateY(-10px);
+        }
+       
+
+    </style>  
+</head>    
+    <div class="main-header">
+        <div class="container">
+
+            <a class="logo"><img src="https://via.placeholder.com/200/200"></a>
+
+            <nav class="main-nav">
+                <a href="#">AI醫學影像分析實作直播學程</a>
+                <a href="#">Java雲端服務開發技術養成班</a>
+                <a href="#">前端工程師專業技術養成班</a>
+                <a href="#">AI智慧應用開發實戰養成班</a>
+            </nav>
+            <form class="header-search">
+                <input type="search" name="" id="">
+                <button><img  src="./img/icons8-search-30.png"></button>
+            </form>
+
+        </div>
+    </div>
+</html>

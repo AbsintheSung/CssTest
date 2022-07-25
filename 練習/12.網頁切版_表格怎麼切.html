@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版_表格怎麼切</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        html,body{
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(90deg,#3d5894,#08c7a5);
+        }
+        .table{
+            width: 800px;
+            margin: auto;
+        }
+
+        .table table{
+            width: 100%;
+            border: 3px double #666;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .table thead{
+            background: #333;
+            color:#fff;
+        }
+
+        .table thead th:first-child{
+            border-radius: 7px 0 0 0 ;
+        }
+        .table thead th:last-child{
+            border-radius: 0 7px 0 0 ;
+        }
+        .table tfoot td:first-child{
+            border-radius: 0 0 0 7px;
+        }
+        .table tfoot td:last-child{
+            border-radius: 0 0 7px 0;
+        }
+
+        .table tbody tr:nth-child(even){
+            background-color: #ffa;
+        }
+
+        .table tr{
+
+        }
+
+        .table th{
+            border:1px solid #666;
+            padding: 6px 10px;
+        }
+
+        .table td{
+            border:1px solid #666;
+            padding: 6px 10px;
+        }
+
+        .table tfoot td:nth-child(2){
+            text-align: center;
+        }
+        .table caption{
+            caption-side:bottom;
+            text-align: right;
+            padding: 10px 0;
+            color:#ccc;
+            
+        }
+
+        /*互動*/
+        .table tbody tr:hover{
+            background-color: rgb(185, 181, 181);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table">
+        
+        <table>
+            <caption>表格標題</caption>
+            <thead>
+                <tr>
+                    <th scope="col">基礎版面</th>
+                    <th scope="col">破格式版面</th>
+                    <th scope="col">滿版</th>
+                    <th scope="col">選單</th>
+                    <th scope="col">表單</th>
+                    <th scope="col">表格</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+                <tr>
+                    <td>圖文滿版</td>
+                    <td>交錯漂浮版</td>
+                    <td>圖文滿版</td>
+                    <td>導覽列</td>
+                    <td>敬請期待</td>
+                    <td>表格怎麼切</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>備註</td>
+                    <td colspan="5">同意轉載</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>

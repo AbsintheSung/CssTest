@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版_文字排版-上集_1-3</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .container h1{
+            box-sizing: border-box;
+            padding:0 15px;
+           margin-bottom: 30px;
+            font-size: 100px;
+            color: #aaa;
+            position: relative;
+           
+            /* background-color: #D5C7B9; */
+        }
+        .container h1:after{
+            content: '';
+            display: block;
+            height: 120px;
+            width: 100%;
+            bottom: 0;
+            background-color: #eee;
+            position: absolute;
+            z-index: -1;
+        }
+      
+        .container .txt{
+            box-sizing: border-box;
+            padding: 0 15px; 
+            line-height: 1.7;
+            column-count: 2;
+            column-gap: 30px;
+        }
+        .container .txt p:first-letter{
+            font-size: 60px;
+            float: left;
+            padding-right: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="container">
+            <h1>CSS文字排版</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis officia ipsa id omnis, veritatis eum ut beatae suscipit quo. Harum consectetur nostrum vero laboriosam, odit quibusdam, dolore alias dolorum qui sed iure velit dolor impedit id ad natus omnis placeat, ipsum aperiam dolorem veniam. Nihil corrupti obcaecati blanditiis inventore recusandae aliquam consectetur culpa vel! Facere repudiandae, magnam odit sapiente error qui dolores illo neque accusamus dolorem esse adipisci minima harum aspernatur quo molestiae nihil, atque quidem totam pariatur amet deserunt porro quod. Soluta expedita quos eum rerum doloribus praesentium voluptas tempore. Quam fugit porro ipsam numquam sit magnam aliquid animi assumenda aspernatur molestiae sequi expedita, architecto saepe, ad, nam amet laboriosam voluptatem quod eveniet illum? In autem nisi ullam dignissimos quis esse commodi maiores perspiciatis sit, eligendi repudiandae aut culpa praesentium molestias tenetur quaerat quod, officiis voluptas. Velit ipsam magnam, sunt ratione quos amet aliquid dolorum commodi voluptatem. Molestiae, minima, vero dolorum optio consectetur saepe sint earum necessitatibus maiores suscipit nisi dolorem ullam, sapiente dignissimos repellat fugit? Iure iusto exercitationem ex assumenda earum, soluta esse dolorem neque debitis vero, voluptates autem laudantium suscipit ducimus similique optio architecto aliquid? Illum animi eligendi perspiciatis voluptatem soluta accusantium inventore accusamus hic? Blanditiis, fuga!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur iure blanditiis porro eos nulla sapiente nisi ad laudantium rerum, est, provident natus ab officiis, earum similique alias voluptas dolorum consequuntur qui veniam neque quidem obcaecati nobis. Sed, impedit omnis sint rerum velit natus cum! Nesciunt illum deserunt perspiciatis, cum eveniet odio numquam, neque at recusandae iusto voluptates commodi tempore obcaecati natus dolore fugiat autem dolorum minus expedita corrupti voluptatem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

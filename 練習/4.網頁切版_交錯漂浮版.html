@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+        <meta name="keyword" content="">
+        <meta name='description' content=''>
+        <title>網頁切版_交錯漂浮版</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            body{
+                padding: 100px 0;
+                background: linear-gradient(20deg,#3d5493,#1aa2a0) fixed center center / 100% 100%;
+            }
+            .wrap{
+                width: 1200px;
+                margin: auto;
+            }
+            .item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 70px;
+                
+            }
+            .item .pic{
+                width:55%;
+               
+            }
+            .item .pic img{
+                width: 100%;
+                vertical-align: middle;
+            } 
+            .item .txt{
+                width: 55%;
+                background-color: #fa8;
+                flex-shrink: 0;
+                padding: 50px 30px;
+                box-sizing: border-box;
+                position: relative;
+                z-index: 1;
+            }
+            .item > :first-child{
+                margin-right: -10%;
+            }
+            .item:nth-child(1) .txt{
+                background-color: rgba(240,174,193, .5);
+            }
+            .item:nth-child(2) .txt{
+                background-color: rgba(42,253,208, .5);
+            }       
+            .item:nth-child(3) .txt{
+                background-color: rgba(254,201,121, .5);
+            }
+            .item:nth-child(4) .txt{
+                background-color: rgba(149,219,214, .5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=15">
+                </div>
+                <div class="txt">
+                    <h2>這是標題一</h2>
+                    <P>container 寬度維持 1000px，每個 box 寬度改爲 400px，總共 1200px，超出 container 寬度。則每個盒子因爲 flex-shrink 預設爲 1 的關係，不夠的空間分均分壓縮三個盒子。效果如下(爲了可視化 container，設置紅色框線)</P>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="txt">
+                    <h2>這是標題二</h2>
+                    <p>container 寬度維持 1000px，每個 box 寬度改爲 400px，總共 1200px，超出 container 寬度。則每個盒子因爲 flex-shrink 預設爲 1 的關係，不夠的空間分均分壓縮三個盒子。效果如下(爲了可視化 container，設置紅色框線)</p>
+                </div>
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=20">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=25">
+                </div>
+                <div class="txt">
+                    <h2>這是標題三</h2>
+                    <p>container 寬度維持 1000px，每個 box 寬度改爲 400px，總共 1200px，超出 container 寬度。則每個盒子因爲 flex-shrink 預設爲 1 的關係，不夠的空間分均分壓縮三個盒子。效果如下(爲了可視化 container，設置紅色框線)</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="txt">
+                    <h2>這是標題四</h2>
+                    <p>container 寬度維持 1000px，每個 box 寬度改爲 400px，總共 1200px，超出 container 寬度。則每個盒子因爲 flex-shrink 預設爲 1 的關係，不夠的空間分均分壓縮三個盒子。效果如下(爲了可視化 container，設置紅色框線)</p>
+                </div>
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=30">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

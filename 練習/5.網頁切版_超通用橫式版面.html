@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <title>網頁切版_超通用橫式版面</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrap{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(-30deg,#fdaecb,#e7597f,#fe8556);
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .item{
+            width: 368px;
+            margin: 0 15px;
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #aaa;
+            box-shadow:0 10px 30px rgba(160,0,0,.5)
+        }
+        .item .pic{
+            width: 50%;
+        }
+        .item .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;/*填滿元素的寬度及高度(維持原比例)，通常會剪掉部分的物件。*/
+        }
+        .item .txt{
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        .item .txt h2{
+            margin-bottom: .4em;
+            font-weight: 700;
+        }
+        .item .txt p{
+            font-weight: 300;
+        }
+        .item .txt .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            color: rgb(0, 0, 0);
+        }
+        .item .txt .btn:hover{
+            color: #fff;
+            background-color: #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=15">
+                </div>
+                <div class="txt">
+                    <h2>網頁切版_超通用橫式版面</h2>
+                    <p>新冠肺炎疫情肆虐全球近2年，我國目前第一劑疫苗的接種比率達70％，第二劑則有30％。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=20">
+                </div>
+                <div class="txt">
+                    <h2>網頁切版_超通用橫式版面</h2>
+                    <p>新冠肺炎疫情肆虐全球近2年，我國目前第一劑疫苗的接種比率達70％，第二劑則有30％，台北市長柯文哲今（30）日表示，按照目前疫苗施打速度，他預估疫情在農曆新年前就會結束，最慢1月中，有7成的民眾會打完2劑，理論上就不需要戴口罩也不用管制。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=30">
+                </div>
+                <div class="txt">
+                    <h2>網頁切版_超通用橫式版面</h2>
+                    <p>新冠肺炎疫情肆虐全球近2年，我國目前第一劑疫苗的接種比率達70％，第二劑則有30％，台北市長柯文哲今（30）日表示，按照目前疫苗施打速度，他預估疫情在農曆新年前就會結束，最慢1月中，有7成的民眾會打完2劑，理論上就不需要戴口罩也不用管制。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>    
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁切版_登入表單</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body,html{
+            height: 100%;
+        }
+        body{
+            /* background: linear-gradient(20deg,#3d5493,#1aa2a0) fixed center center / 100% 100%; */
+            background: url('./img/85602912_p0.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login{
+            height: 100%;
+            width: 600px;
+            height: 500px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px;
+            border: 10px solid #fff;
+            box-shadow: 0 0 60px #000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            widows: 400px;
+            color: #fff;
+        }
+        .form h2{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+        }
+        .form .group{
+            margin-bottom: 20px;
+        }
+        .form label{
+            line-height: 2;
+        }
+        .form input{
+            width: 100%;
+            border: 1px solid #aaa;
+            line-height: 3;
+            border-radius: 5px;
+        }
+        .form .btn-group{
+            font-size: 0;
+            margin-top: 50px;
+        }
+        .form .btn{
+            font-size: 20px ;
+            border-radius: 5px ;
+            border: none;
+            background-color: #6ab4fe;
+            width: 190px;
+            padding: 10px 0;
+            color: #fff;
+        }
+        .form .btn + .btn{
+            margin-left: 20px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <form action="" class="form">
+            <div class="group">
+                <label for="user_id">帳號:</label>
+                <input type="text" name="" id="user_id">
+            </div>
+            <div class="group">
+                <label for="user_password">密碼:</label>
+                <input type="text" name="" id="user_password">
+            </div>
+            <div class="btn-group">
+                <button class="btn">登入</button>
+                <button class="btn">取消</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

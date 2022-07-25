@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD選單+試排版</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .item-group{
+            width: 100%;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        .banner img{
+            width: 100%;
+            
+        }
+        .title{
+            margin: 0 0px 20px;
+            padding: 30px 10px;
+            background-color: #ccc;
+        }
+        .title h2{
+            text-align: center;
+            font-size: 46px;
+        }
+        .title p{
+            font-size: 22px;
+            text-align: center;
+        }
+        .item{
+            margin: 0 10px 40px;
+        }
+        .item .pic img{
+            width: 100%;
+        }
+        .item .text h3{
+            font-size: 24px;
+            text-align: center;
+        }
+     
+
+        .footer{
+            background-color: #333;
+            color:#aaa;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .service{
+            margin: 60px 0;
+            background-color: #ffa;
+        }
+        .service .item{
+           margin: 0;
+        }
+
+        @media screen and (min-width:768px){
+            .item-group{
+                display: flex;
+                
+            }
+            .about .item{
+                width: 500px;
+            }
+            .service .item{
+                display: flex;
+                
+            }
+            .service .item .pic,
+            .service .item .text{
+                width: 50%;
+                margin: 0;
+            }
+            .service .item .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 20px;
+                box-sizing: border-box;
+            }
+        }
+
+        /*-------------------------------------*/
+
+        #menu_control{
+            position: absolute;
+            z-index: -2;
+            opacity: 0;
+        }
+
+        .header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        .logo{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .logo a{
+            display: block;
+            height: 40px;
+        }
+        .logo img{
+            display: block;
+        }
+        .menu_btn{
+            width:40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .menu_btn span{
+            opacity: 0;
+            /* color: rgb(255, 255, 255); */
+            width: 1px;
+            height: 1px;
+            display: block;
+            /* overflow: hidden; */
+        }
+        .menu_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            right: 2px;
+            /*因為menu_btn的wight為40px 而左右各2px*/
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;  
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                        0px -8px 0px #aaa;
+        }
+        nav {
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282923;
+            position: absolute;
+            top:50px;
+            /* left: 0px; */
+
+            /*用css控制*/
+            left:-100%;
+            transition: .5s;
+            
+
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color:#a6e22c;
+            padding: 10px 20px ;
+            border-bottom: 1px solid #a6e22c;
+            
+        }
+        #menu_control:checked ~ .header nav{
+            left:0;
+        }
+
+        @media screen and (min-width:768px){
+            .menu_btn{
+                display: none;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: #282923;
+                align-items: center;
+            }
+            nav{
+                position: relative;
+                left:0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top:0;
+                background-color: transparent;
+            }
+            nav a{
+                border-bottom: none;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+     
+    <input type="checkbox" name="" id="menu_control">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/60/40?random=1">
+            </a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="" #="">link</a>
+            <a href="" #="">link</a>
+            <a href="" #="">link</a>
+            <a href="" #="">link</a>
+            <a href="" #="">link</a>
+            <a href="" #="">link</a>
+        </nav>
+    </div>
+
+
+    <div class="banner">
+        <img src="https://picsum.photos/1400/500?random=10">
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit suscipit, modi obcaecati dolores quibusdam inventore alias. Sed, obcaecati magnam!</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=20"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>高雄市主要行政區中，楠梓區的房價指數年漲16.29%最高，遙遙領先其他行政區。楠梓區因台積電即將設廠，房市交易熱絡。高雄市漲幅居次的則是岡山區達8.48%，其餘依序為左營區7.77%、小港區7.58%、新興區6.83%。「清華安富房價指數」分析，高雄市房價表現自2017年初從低谷開始反彈後，至今持續呈現緩步上漲趨勢。以實價登錄完整資料來看，各行政區的價量表現與去年同期相較，除前鎮區下跌0.55%之外，房價指數均呈上漲格局，其中以楠梓區以及岡山區表現最為亮眼，後續走勢有待觀察。</p>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=90"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>本土疫情延燒，衝擊內需市場以及許多產業，蔡英文總統今（6）日出席第七屆會員代表大會時表示，政府確實是有計畫地希望每一年都能夠調高基本工資，受疫情衝擊較大的中小型企業，如果調高基本工資有困難，政府也會提供協助；她強調，政府一定會排除萬難，務必讓最低工資能夠持續往上調升。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=60"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>台灣對外貿易長期呈現出超，而去年出口暢旺下，出超規模達649億美元高峰，其中對中國大陸與香港、對美出超規模都寫下新高，尤其對陸港出超穩坐居冠軍，且規模有逐步擴大趨勢，去年首度突破千億美元，達到1,047億美元新高水準。</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=60">
+                    </div>
+                    <div class="text">
+                        <h3>Title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quibusdam veniam impedit, corporis eius aperiam fugiat laboriosam possimus neque mollitia expedita et quae facilis assumenda totam ducimus, tenetur iure recusandae sit exercitationem? Assumenda in libero omnis earum nesciunt impedit. Autem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit suscipit, modi obcaecati dolores quibusdam inventore alias. Sed, obcaecati magnam!</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=31"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>高雄市主要行政區中，楠梓區的房價指數年漲16.29%最高，遙遙領先其他行政區。楠梓區因台積電即將設廠，房市交易熱絡。高雄市漲幅居次的則是岡山區達8.48%，其餘依序為左營區7.77%、小港區7.58%、新興區6.83%。「清華安富房價指數」分析，高雄市房價表現自2017年初從低谷開始反彈後，至今持續呈現緩步上漲趨勢。以實價登錄完整資料來看，各行政區的價量表現與去年同期相較，除前鎮區下跌0.55%之外，房價指數均呈上漲格局，其中以楠梓區以及岡山區表現最為亮眼，後續走勢有待觀察。</p>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=35"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>本土疫情延燒，衝擊內需市場以及許多產業，蔡英文總統今（6）日出席第七屆會員代表大會時表示，政府確實是有計畫地希望每一年都能夠調高基本工資，受疫情衝擊較大的中小型企業，如果調高基本工資有困難，政府也會提供協助；她強調，政府一定會排除萬難，務必讓最低工資能夠持續往上調升。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/300/200?random=33"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>台灣對外貿易長期呈現出超，而去年出口暢旺下，出超規模達649億美元高峰，其中對中國大陸與香港、對美出超規模都寫下新高，尤其對陸港出超穩坐居冠軍，且規模有逐步擴大趨勢，去年首度突破千億美元，達到1,047億美元新高水準。</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; copyright 2022 by Absinthe
+    </div>
+    
+</body>
+</html>
